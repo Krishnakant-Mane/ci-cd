@@ -9,6 +9,11 @@ app.get('/',(req,res) => {
     res.send('Server is Running Docker Applied! This is so good!');
 })
 
+app.get('/health',(req,res) => {
+    res.send('OK All good!');
+})
+
+
 app.listen(PORT,() => {
     console.log(`Server started on port ${PORT}`);
 })
