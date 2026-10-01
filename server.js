@@ -14,9 +14,9 @@ app.get('/health',(req,res) => {
 })
 
 app.get('/calculate',(req,res) => {
-    num1 = Math.floor(Math.random() * 100);
-    num2 = Math.floor(Math.random() * 100);
-    const sum = num1 + num2;
+    let num1 = Math.floor(Math.random() * 100);
+    let num2 = Math.floor(Math.random() * 100);
+    let sum = num1 + num2;
     res.send(`Sum of ${num1} and ${num2} is ${sum}`);
 })
 
